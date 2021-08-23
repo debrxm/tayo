@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Estricta';
+    src: url('EstrictaLightItalic.eot');
+    src: local('Estricta Light Italic'), local('EstrictaLightItalic'),
+        url('EstrictaLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('EstrictaLightItalic.woff2') format('woff2'),
+        url('EstrictaLightItalic.woff') format('woff'),
+        url('EstrictaLightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Estricta';
+    src: url('EstrictaMediumItalic.eot');
+    src: local('Estricta Medium Italic'), local('EstrictaMediumItalic'),
+        url('EstrictaMediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('EstrictaMediumItalic.woff2') format('woff2'),
+        url('EstrictaMediumItalic.woff') format('woff'),
+        url('EstrictaMediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Estricta';
+    src: url('EstrictaThinItalic.eot');
+    src: local('Estricta Thin Italic'), local('EstrictaThinItalic'),
+        url('EstrictaThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('EstrictaThinItalic.woff2') format('woff2'),
+        url('EstrictaThinItalic.woff') format('woff'),
+        url('EstrictaThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Estricta';
+    src: url('EstrictaLight.eot');
+    src: local('Estricta Light'), local('EstrictaLight'),
+        url('EstrictaLight.eot?#iefix') format('embedded-opentype'),
+        url('EstrictaLight.woff2') format('woff2'),
+        url('EstrictaLight.woff') format('woff'),
+        url('EstrictaLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Estricta';
+    src: url('EstrictaMedium.eot');
+    src: local('Estricta Medium'), local('EstrictaMedium'),
+        url('EstrictaMedium.eot?#iefix') format('embedded-opentype'),
+        url('EstrictaMedium.woff2') format('woff2'),
+        url('EstrictaMedium.woff') format('woff'),
+        url('EstrictaMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Estricta';
+    src: url('EstrictaBlack.eot');
+    src: local('Estricta Black'), local('EstrictaBlack'),
+        url('EstrictaBlack.eot?#iefix') format('embedded-opentype'),
+        url('EstrictaBlack.woff2') format('woff2'),
+        url('EstrictaBlack.woff') format('woff'),
+        url('EstrictaBlack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Estricta Regular';
+    src: url('EstrictaRegularItalic.eot');
+    src: local('Estricta Regular Italic'), local('EstrictaRegularItalic'),
+        url('EstrictaRegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('EstrictaRegularItalic.woff2') format('woff2'),
+        url('EstrictaRegularItalic.woff') format('woff'),
+        url('EstrictaRegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Estricta';
+    src: url('EstrictaBold.eot');
+    src: local('Estricta Bold'), local('EstrictaBold'),
+        url('EstrictaBold.eot?#iefix') format('embedded-opentype'),
+        url('EstrictaBold.woff2') format('woff2'),
+        url('EstrictaBold.woff') format('woff'),
+        url('EstrictaBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Estricta';
+    src: url('EstrictaRegular.eot');
+    src: local('Estricta Regular'), local('EstrictaRegular'),
+        url('EstrictaRegular.eot?#iefix') format('embedded-opentype'),
+        url('EstrictaRegular.woff2') format('woff2'),
+        url('EstrictaRegular.woff') format('woff'),
+        url('EstrictaRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Estricta';
+    src: url('EstrictaBoldItalic.eot');
+    src: local('Estricta Bold Italic'), local('EstrictaBoldItalic'),
+        url('EstrictaBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('EstrictaBoldItalic.woff2') format('woff2'),
+        url('EstrictaBoldItalic.woff') format('woff'),
+        url('EstrictaBoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Estricta';
+    src: url('EstrictaBlackItalic.eot');
+    src: local('Estricta Black Italic'), local('EstrictaBlackItalic'),
+        url('EstrictaBlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('EstrictaBlackItalic.woff2') format('woff2'),
+        url('EstrictaBlackItalic.woff') format('woff'),
+        url('EstrictaBlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Estricta';
+    src: url('EstrictaThin.eot');
+    src: local('Estricta Thin'), local('EstrictaThin'),
+        url('EstrictaThin.eot?#iefix') format('embedded-opentype'),
+        url('EstrictaThin.woff2') format('woff2'),
+        url('EstrictaThin.woff') format('woff'),
+        url('EstrictaThin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+

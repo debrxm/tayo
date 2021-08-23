@@ -1,0 +1,1217 @@
+/**
+*
+* Testing
+*
+**/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'komu';
+  src: url("./Assets/Fonts/komua.ttf");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'estrica';
+  src: url("./Assets/Fonts/estrica.ttf");
+  font-weight: 100;
+}
+
+div.mc-field-group.input-group strong {
+  font-family: "komu", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+div.mc-field-group.input-group input {
+  margin-right: 0.3rem;
+}
+
+body {
+  position: relative;
+  width: 90vw;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3rem 0;
+  background-color: #FFF5EA;
+}
+
+header {
+  font-family: "komu", sans-serif;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5fr 9fr;
+      grid-template-columns: 5fr 9fr;
+  -ms-grid-row-align: self-end;
+      align-self: self-end;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+header ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr  1fr 2fr;
+      grid-template-columns: 1fr  1fr 2fr;
+  text-align: right;
+}
+
+header ul li {
+  text-align: right;
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #040F20;
+  font-size: 1.7rem;
+  letter-spacing: 0.04rem;
+}
+
+header ul #pateron a {
+  width: 80%;
+  background-color: #040F20;
+  text-align: center;
+  color: #FFF5EA;
+  text-align: center;
+  display: block;
+  padding: 1rem 1rem 0.6rem 1rem;
+  margin: -1rem auto 0 auto;
+  border-radius: 12px;
+}
+
+#showcase {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 8fr 5fr;
+      grid-template-columns: 8fr 5fr;
+  margin-top: 15vh;
+}
+
+#showcase #tayoIntro h1 {
+  color: #040F20;
+  font-family: "komu", sans-serif;
+  font-size: 15rem;
+  font-weight: 100;
+  line-height: 13rem;
+}
+
+#showcase #tayoIntro #aboutParagraphs {
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+#showcase #tayoIntro #aboutParagraphs #paraWithLine {
+  font-family: "estrica", sans-serif;
+  font-size: 1.2rem;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+#showcase #tayoIntro #aboutParagraphs #paraWithLine div {
+  background-color: #040F20;
+  width: 30%;
+  height: 3px;
+}
+
+#showcase #tayoIntro #aboutParagraphs #paraWithLine p {
+  line-height: 22px;
+}
+
+#showcase #tayoIntro #aboutParagraphs p {
+  font-family: "estrica", sans-serif;
+  font-size: 1.2rem;
+  line-height: 25px;
+  margin-top: 2rem;
+  width: 90%;
+}
+
+#showcase #tayoIntro #social ul {
+  width: 40%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr 2fr 1fr 2fr;
+      grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.3fr;
+}
+
+#showcase #tayoIntro #social ul li {
+  list-style: none;
+  font-family: "komu", sans-serif;
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+#showcase #tayoIntro #social ul li a {
+  color: #040F20;
+  text-decoration: none;
+}
+
+#showcase #tayoIntro #social ul li:nth-child(1) a {
+  display: block;
+  background: url("/Assets/twitter.svg") center no-repeat;
+  background-size: 80%;
+  width: 40px;
+  height: 40px;
+}
+
+#showcase #tayoIntro #social ul li:nth-child(3) {
+  display: block;
+  background: url("/Assets/instagram.svg") center no-repeat;
+  background-size: 80%;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+#showcase #tayoIntro #social ul li:nth-child(5) {
+  display: block;
+  background: url("/Assets/youtube.svg") center no-repeat;
+  background-size: 90%;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+#showcase #tayoIntro #social ul div {
+  background-color: #040F20;
+  width: 50%;
+  height: 2px;
+  margin: 0 auto;
+}
+
+#showcase #tayoImg {
+  width: 100%;
+  height: 100%;
+  background: url("/Assets/tayoaina.png");
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: -7%;
+}
+
+#courseBox {
+  background-color: white;
+  margin: 9rem 0;
+  padding: 2rem 2rem;
+  border-radius: 11px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 4fr 1fr;
+      grid-template-columns: 4fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#courseBox #courseText #courseTextBadge {
+  margin-bottom: 0.6rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
+  gap: 0 6px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#courseBox #courseText #courseTextBadge img {
+  width: 18px;
+}
+
+#courseBox #courseText #courseTextBadge p {
+  font-family: "komu", sans-serif;
+  padding-top: 4px;
+  font-size: 1.2rem;
+  letter-spacing: 0.2px;
+  color: #F46095;
+}
+
+#courseBox #courseText h1 {
+  font-family: "komu", sans-serif;
+  font-size: 3.4rem;
+  font-weight: 100;
+  color: #040F20;
+}
+
+#courseBox #courseText p {
+  font-family: "estrica", sans-serif;
+  font-size: 1.1rem;
+  color: #040F20;
+}
+
+#courseBox button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 0 0 auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 11px;
+  background-color: #040F20;
+  font-family: "komu", sans-serif;
+  font-size: 2rem;
+}
+
+#courseBox button a {
+  text-decoration: none;
+  color: white;
+  margin-top: 4px;
+  display: block;
+  letter-spacing: 0.2px;
+}
+
+#sellingPoints {
+  border-radius: 22px;
+  margin-top: 4rem;
+  background: #040F20;
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#sellingPoints #pointsBox {
+  padding: 5rem 0rem 5rem 8rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+#sellingPoints #pointsBox h1 {
+  color: white;
+  font-family: "komu", sans-serif;
+  font-size: 3rem;
+  font-weight: lighter;
+}
+
+#sellingPoints #pointsBox p {
+  color: white;
+  font-family: "estrica", sans-serif;
+  line-height: 1.5rem;
+  width: 70%;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  margin-top: 5rem;
+}
+
+#sellingPoints #pointsBox button {
+  border-radius: 11px;
+  background-color: #FFF5EA;
+  border: none;
+  padding: 1rem 1rem;
+  font-family: "komu", sans-serif;
+  font-size: 1.4rem;
+  margin-top: 1rem;
+}
+
+#sellingPoints #pointsBox button a {
+  text-decoration: none;
+  color: #040F20;
+}
+
+#sellingPoints #pointsBox .points:nth-child(1) .pointsIcon {
+  background: url("/Assets/TayovideoIcon.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+#sellingPoints #pointsBox .points:nth-child(2) .pointsIcon {
+  background: url("/Assets/tayoTravelsIcon.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+#sellingPoints #pointsBox .points:nth-child(3) .pointsIcon {
+  background: url("/Assets/tayoBusinessStoriesIcon.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+#sellingPoints #pointsBox .points .pointsIcon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 0.6rem;
+}
+
+#newsLetter {
+  margin: 3rem 0 0 0;
+  padding: 4rem 3rem;
+  border-radius: 9px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 2fr;
+      grid-template-columns: 2fr 2fr;
+}
+
+#newsLetter #newsletterText {
+  color: #040F20;
+}
+
+#newsLetter #newsletterText h1 {
+  font-family: "komu", sans-serif;
+  font-size: 5rem;
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+
+#newsLetter #newsletterText p {
+  font-family: "estrica", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  margin-bottom: 2rem;
+}
+
+#newsLetter form {
+  width: 90%;
+}
+
+#newsLetter form input {
+  display: block;
+  font-family: "estrica", sans-serif;
+  font-size: 1.3rem;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid #040F20;
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+  margin: 1rem 0;
+}
+
+#newsLetter form input::-webkit-input-placeholder {
+  color: #040F20;
+}
+
+#newsLetter form input:-ms-input-placeholder {
+  color: #040F20;
+}
+
+#newsLetter form input::-ms-input-placeholder {
+  color: #040F20;
+}
+
+#newsLetter form input::placeholder {
+  color: #040F20;
+}
+
+#newsLetter form input:focus {
+  outline: none;
+}
+
+#newsLetter form #submitButton {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0.7rem 1.5rem 0.5rem 1.5rem;
+  border: none;
+  border-radius: 11px;
+  background-color: #040F20;
+  font-family: "komu", sans-serif;
+  font-size: 2rem;
+  color: white;
+}
+
+#about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.5fr 1fr;
+      grid-template-columns: 1.5fr 1fr;
+  margin: 0rem 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+#about #aboutTayoAinaImage #aboutTayoAinaimg {
+  height: 500px;
+  width: 90%;
+  background-image: url("/Assets/tayoBlue.jpg");
+  background-position: top;
+  background-size: cover;
+  border-radius: 22px;
+  background-repeat: no-repeat;
+  background-color: #040F20;
+}
+
+#about #aboutTayoAinaImage #social {
+  margin: 1.5rem 0;
+}
+
+#about #aboutTayoAinaImage #social ul {
+  width: 40%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr 2fr 1fr 2fr;
+      grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.3fr;
+}
+
+#about #aboutTayoAinaImage #social ul li {
+  list-style: none;
+  font-family: "komu", sans-serif;
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+#about #aboutTayoAinaImage #social ul li a {
+  color: #040F20;
+  text-decoration: none;
+}
+
+#about #aboutTayoAinaImage #social ul div {
+  background-color: #040F20;
+  width: 50%;
+  height: 2px;
+  margin: 0 auto;
+}
+
+#about #aboutTayoAinaImage button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 0 0 auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 11px;
+  background-color: #040F20;
+  font-family: "komu", sans-serif;
+  font-size: 2rem;
+}
+
+#about #aboutTayoAinaImage button a {
+  text-decoration: none;
+  color: white;
+  margin-top: 4px;
+  display: block;
+  letter-spacing: 0.2px;
+  font-weight: lighter;
+}
+
+#about #aboutTayoAinaText p {
+  font-size: 1.4rem;
+  font-family: "estrica", sans-serif;
+  color: #040F20;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+#about #aboutTayoAinaText p a {
+  text-decoration-thickness: 2px;
+  -webkit-text-decoration-color: #ff7b00;
+          text-decoration-color: #ff7b00;
+  color: #ff7b00;
+  display: inline-block;
+}
+
+#about #aboutTayoAinaText #aboutEmailBttn {
+  margin-top: 4rem;
+}
+
+#about #aboutTayoAinaText #aboutEmailBttn p {
+  font-family: "komu", sans-serif;
+  margin: 0;
+}
+
+#about #aboutTayoAinaText #aboutEmailBttn button {
+  width: 80%;
+  margin: 0 0 0 auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1rem 0rem;
+  border: none;
+  background-color: #040F20;
+  font-family: "komu", sans-serif;
+  font-size: 3rem;
+}
+
+#about #aboutTayoAinaText #aboutEmailBttn button a {
+  text-decoration: none;
+  color: white;
+  margin-top: 4px;
+  display: block;
+  letter-spacing: 0.2px;
+  font-weight: lighter;
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 4fr 7fr;
+      grid-template-columns: 4fr 7fr;
+  background: #040F20 url("/Assets/tayoSitting.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 33px;
+  padding: 3rem 4rem;
+  margin-top: 3rem;
+  padding-top: 24%;
+}
+
+footer #footerTextLogo h3 {
+  color: white;
+  font-family: "komu", sans-serif;
+  font-size: 2.4rem;
+  font-weight: lighter;
+}
+
+footer #footerTextLogo p {
+  font-family: "estrica", sans-serif;
+  font-size: 1.3rem;
+  color: white;
+}
+
+footer #footerTextLogo form {
+  width: 90%;
+  margin-top: 1rem;
+}
+
+footer #footerTextLogo form input {
+  display: block;
+  font-family: "estrica", sans-serif;
+  font-size: 1.3rem;
+  background-color: transparent;
+  border: 2px solid #FFF5EA;
+  border-radius: 0;
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+  margin: 0.4rem 0;
+}
+
+footer #footerTextLogo form input::-webkit-input-placeholder {
+  color: white;
+}
+
+footer #footerTextLogo form input:-ms-input-placeholder {
+  color: white;
+}
+
+footer #footerTextLogo form input::-ms-input-placeholder {
+  color: white;
+}
+
+footer #footerTextLogo form input::placeholder {
+  color: white;
+}
+
+footer #footerTextLogo form input:focus {
+  outline: none;
+}
+
+footer #footerTextLogo form #submitButton {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0.7rem 1.5rem 0.5rem 1.5rem;
+  border: none;
+  border-radius: 11px;
+  background-color: #FFF5EA;
+  font-family: "komu", sans-serif;
+  font-size: 2rem;
+  color: #040F20;
+  margin-top: 0.5rem;
+}
+
+footer #footerText {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
+}
+
+footer #footerText #footerSocial h3 {
+  color: white;
+  font-family: "komu", sans-serif;
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+footer #footerText #footerSocial ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer #footerText #footerSocial ul li {
+  margin: 1rem 0;
+  list-style: none;
+  text-align: left;
+  font-family: "estrica", sans-serif;
+  font-size: 1.2rem;
+}
+
+footer #footerText #footerSocial ul li:nth-child(1) {
+  display: block;
+  background: url("/Assets/twitterwhite.svg") left no-repeat;
+  background-size: 60%;
+  width: 40px;
+  height: 40px;
+}
+
+footer #footerText #footerSocial ul li:nth-child(2) {
+  display: block;
+  background: url("/Assets/instagramwhite.svg") left no-repeat;
+  background-size: 60%;
+  width: 40px;
+  height: 40px;
+}
+
+footer #footerText #footerSocial ul li:nth-child(3) {
+  display: block;
+  background: url("/Assets/youtubewhite.svg") left no-repeat;
+  background-size: 60%;
+  width: 40px;
+  height: 40px;
+}
+
+footer #footerText #footerSocial ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+footer #footerText #fotterAbout {
+  width: 70%;
+}
+
+footer #footerText #fotterAbout h3 {
+  color: white;
+  font-family: "komu", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 100;
+}
+
+footer #footerText #fotterAbout p {
+  font-size: 1.4rem;
+  color: white;
+  margin-top: 0.5rem;
+  font-family: "estrica", sans-serif;
+  line-height: 1.5;
+}
+
+footer #footerText #fotterAbout p a {
+  color: white;
+}
+
+#registrationPopUp {
+  margin: 5rem 0;
+  background-color: white;
+  border-radius: 34px;
+}
+
+#registrationPopUp #registrationPopUpBox {
+  padding: 3rem 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#registrationPopUp #registrationPopUpBox #registrationPopUpImage img {
+  width: 80%;
+  margin-top: -20%;
+}
+
+#registrationPopUp #registrationPopUpBox #registrationPopUpText h4 {
+  font-family: "komu", sans-serif;
+  font-size: 5.5rem;
+  font-weight: 100;
+}
+
+#registrationPopUp #registrationPopUpBox #registrationPopUpText p {
+  font-size: 1.2rem;
+  margin-top: 10%;
+  font-family: "estrica", sans-serif;
+  width: 70%;
+  line-height: 1.5;
+}
+
+#registrationPopUp #registrationPopUpBox #registrationPopUpText form {
+  margin: 2rem 0;
+}
+
+#registrationPopUp #registrationPopUpBox #registrationPopUpText form input[type='email'] {
+  width: 50%;
+  display: block;
+  font-family: "estrica", sans-serif;
+  font-size: 1.3rem;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid #040F20;
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+}
+
+#registrationPopUp #registrationPopUpBox #registrationPopUpText form input[type='email']::-webkit-input-placeholder {
+  color: #040F20;
+}
+
+#registrationPopUp #registrationPopUpBox #registrationPopUpText form input[type='email']:-ms-input-placeholder {
+  color: #040F20;
+}
+
+#registrationPopUp #registrationPopUpBox #registrationPopUpText form input[type='email']::-ms-input-placeholder {
+  color: #040F20;
+}
+
+#registrationPopUp #registrationPopUpBox #registrationPopUpText form input[type='email']::placeholder {
+  color: #040F20;
+}
+
+#registrationPopUp #registrationPopUpBox #registrationPopUpText form input[type='email']:focus {
+  outline: none;
+}
+
+#registrationPopUp #registrationPopUpBox #registrationPopUpText form input[type='text'] {
+  width: 50%;
+  display: block;
+  font-family: "estrica", sans-serif;
+  font-size: 1.3rem;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid #040F20;
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+}
+
+#registrationPopUp #registrationPopUpBox #registrationPopUpText form input[type='text']::-webkit-input-placeholder {
+  color: #040F20;
+}
+
+#registrationPopUp #registrationPopUpBox #registrationPopUpText form input[type='text']:-ms-input-placeholder {
+  color: #040F20;
+}
+
+#registrationPopUp #registrationPopUpBox #registrationPopUpText form input[type='text']::-ms-input-placeholder {
+  color: #040F20;
+}
+
+#registrationPopUp #registrationPopUpBox #registrationPopUpText form input[type='text']::placeholder {
+  color: #040F20;
+}
+
+#registrationPopUp #registrationPopUpBox #registrationPopUpText form input[type='text']:focus {
+  outline: none;
+}
+
+#registrationPopUp #registrationPopUpBox #registrationPopUpText form #submitButton {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0.7rem 1.5rem 0.5rem 1.5rem;
+  border: none;
+  border-radius: 11px;
+  background-color: #040F20;
+  font-family: "komu", sans-serif;
+  font-size: 2rem;
+  color: white;
+}
+
+#closeBttn {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0.7rem 1.5rem 0.5rem 1.5rem;
+  border: none;
+  border-radius: 11px;
+  background-color: #040F20;
+  font-family: "komu", sans-serif;
+  font-size: 2rem;
+  color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 3%;
+  cursor: pointer;
+  right: 0;
+}
+
+/*Reponsitivity starts here*/
+@media (min-width: 320px) and (max-width: 766px) {
+  body {
+    width: 96vw;
+    padding: 1.3rem 0;
+  }
+  .mobileHeader {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 8fr 2fr;
+        grid-template-columns: 8fr 2fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mobileHeader h3 {
+    font-family: "komu", sans-serif;
+    font-size: 2rem;
+    margin-top: 6px;
+    font-weight: 100;
+    color: #040F20;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .mobileHeader h3:focus {
+    background-color: red;
+  }
+  .mobileHeader img {
+    width: 20%;
+  }
+  #mobileMenuItems {
+    height: 100vh;
+    padding-top: 35%;
+  }
+  #mobileMenuItems ul li {
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    margin: 1rem 0;
+    font-family: "estrica", sans-serif;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+  }
+  #mobileMenuItems ul li a {
+    text-decoration: none;
+    color: #040F20;
+    font-size: 1.7rem;
+    letter-spacing: 0.04rem;
+  }
+  #mobileMenuItems ul #pateron a {
+    width: 80%;
+    background-color: #040F20;
+    text-align: center;
+    color: #FFF5EA;
+    text-align: center;
+    display: block;
+    padding: 1rem 1rem 0.6rem 1rem;
+    margin: 1rem auto 0 auto;
+    border-radius: 12px;
+  }
+  header {
+    display: none;
+  }
+  main #showcase {
+    display: block;
+    margin-top: 3rem;
+  }
+  main #showcase #tayoIntro h1 {
+    font-size: 15rem;
+  }
+  main #showcase #tayoIntro #aboutParagraphs #paraWithLine {
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  main #showcase #tayoIntro #aboutParagraphs #paraWithLine div {
+    width: 30%;
+    margin-bottom: 0.5rem;
+  }
+  main #showcase #tayoIntro #social ul {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  main #showcase #tayoImg {
+    width: 100%;
+    height: 500px;
+  }
+  main #courseBox {
+    display: block;
+    margin: 0 0 2rem 0;
+  }
+  main #courseBox #courseText #courseTextBadge p {
+    margin: 3px 0 0 0 !important;
+  }
+  main #courseBox #courseText h1 {
+    margin: 1rem 0;
+    font-size: 3rem;
+  }
+  main #courseBox #courseText p {
+    margin-bottom: 1rem;
+    line-height: 1.4;
+  }
+  main #sellingPoints {
+    margin-bottom: 2rem;
+    background: #040F20;
+  }
+  main #sellingPoints #pointsBox {
+    display: block;
+    width: 90%;
+    margin: 2rem auto;
+    padding: 3rem 1rem;
+  }
+  main #sellingPoints #pointsBox .points {
+    margin: 3rem 0;
+  }
+  main #sellingPoints #pointsBox .points p {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  main #newsLetter {
+    margin: 4rem 0 0 0;
+    display: block;
+    padding: 2rem 1.2rem;
+  }
+  main #newsLetter form {
+    width: 100%;
+  }
+  main #about {
+    margin-bottom: 4rem;
+    margin-top: 3rem;
+    display: block;
+  }
+  main #about #aboutTayoAinaImage #aboutTayoAinaimg {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  main #about #aboutTayoAinaImage #social {
+    margin-bottom: 1rem;
+  }
+  main #about #aboutTayoAinaImage #social ul {
+    margin: 0;
+    width: 100%;
+  }
+  main #about #aboutTayoAinaImage button {
+    margin-bottom: 3rem;
+  }
+  main #about #aboutTayoAinaImage button a {
+    font-weight: 100;
+  }
+  main #about #aboutTayoAinaText #aboutEmailBttn button {
+    width: 100%;
+    font-size: 2rem;
+  }
+  footer {
+    display: block;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  footer #footerText {
+    padding-top: 20%;
+    display: block;
+  }
+  footer #footerText .footerInfoBox {
+    margin-bottom: 3rem;
+  }
+  #registrationPopUp {
+    margin-top: 7rem;
+    border-radius: 4px;
+  }
+  #registrationPopUp #registrationPopUpBox {
+    display: block;
+    padding: 0.4rem 0;
+  }
+  #registrationPopUp #registrationPopUpBox #registrationPopUpImage img {
+    width: 100%;
+    margin-top: -15%;
+  }
+  #registrationPopUp #registrationPopUpBox #registrationPopUpText p {
+    width: 90%;
+  }
+  #registrationPopUp #registrationPopUpBox #registrationPopUpText form input[type='email'] {
+    width: 90%;
+  }
+  #registrationPopUp #registrationPopUpBox #registrationPopUpText form input[type='text'] {
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1365px) {
+  body {
+    width: 96vw;
+  }
+  body header {
+    -ms-grid-columns: 1fr 9fr;
+        grid-template-columns: 1fr 9fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body header ul {
+    padding-top: 20px;
+  }
+  body #showcase #tayoImg {
+    width: 100%;
+    height: 500px;
+    display: block;
+    margin: 0;
+  }
+  body #showcase #tayoIntro {
+    margin-bottom: 2rem;
+  }
+  body #showcase #tayoIntro #aboutParagraphs #paraWithLine {
+    display: block;
+  }
+  body #showcase #tayoIntro #aboutParagraphs #paraWithLine div {
+    width: 40%;
+    margin-bottom: 2rem;
+  }
+  body #showcase #tayoIntro #social ul {
+    width: 90%;
+  }
+  body #courseBox {
+    padding: 0.6rem 1rem 1.5rem 1rem;
+    margin: 4rem 0;
+    display: block;
+  }
+  body #courseBox #courseText h1 {
+    font-size: 2.9rem;
+  }
+  body #courseBox #courseText p {
+    margin: 1rem 0;
+  }
+  body #newsLetter {
+    margin: 4rem 0 0 0;
+    display: block;
+    padding: 2rem 1.2rem;
+  }
+  body #newsLetter form {
+    width: 100%;
+  }
+  body #sellingPoints {
+    margin-bottom: 2rem;
+    background: #040F20;
+  }
+  body #sellingPoints #pointsBox {
+    display: block;
+    width: 90%;
+    margin: 2rem auto;
+    padding: 3rem 1rem;
+  }
+  body #sellingPoints #pointsBox .points {
+    margin: 3rem 0;
+  }
+  body #sellingPoints #pointsBox .points p {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  body #about {
+    margin-bottom: 4rem;
+    margin-top: 3rem;
+    display: block;
+  }
+  body #about #aboutTayoAinaImage #aboutTayoAinaimg {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  body #about #aboutTayoAinaImage #social {
+    margin-bottom: 1rem;
+  }
+  body #about #aboutTayoAinaImage #social ul {
+    margin: 0;
+    width: 100%;
+  }
+  body #about #aboutTayoAinaImage button {
+    margin-bottom: 3rem;
+  }
+  body #about #aboutTayoAinaImage button a {
+    font-weight: 100;
+  }
+  body footer {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  body footer #footerTextLogo {
+    padding-top: 3rem;
+  }
+  body footer #footerTextLogo h1 {
+    color: white;
+    font-family: "komu", sans-serif;
+    font-size: 10rem;
+    font-weight: lighter;
+  }
+  body #registrationPopUp {
+    margin-top: 7rem;
+    border-radius: 4px;
+  }
+  body #registrationPopUp #registrationPopUpBox {
+    display: block;
+    padding: 0.4rem 0;
+  }
+  body #registrationPopUp #registrationPopUpBox #registrationPopUpImage img {
+    width: 100%;
+    margin-top: -15%;
+  }
+  body #registrationPopUp #registrationPopUpBox #registrationPopUpText p {
+    width: 90%;
+  }
+  body #registrationPopUp #registrationPopUpBox #registrationPopUpText form input[type='email'] {
+    width: 90%;
+  }
+  body #registrationPopUp #registrationPopUpBox #registrationPopUpText form input[type='text'] {
+    width: 90%;
+  }
+  .mobileHeader {
+    display: none;
+  }
+  #mobileMenuItems {
+    display: none;
+  }
+  header {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+@media (min-width: 1367px) {
+  .mobileHeader {
+    display: none;
+  }
+  #mobileMenuItems {
+    display: none;
+  }
+  header {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+/*# sourceMappingURL=index.css.map */

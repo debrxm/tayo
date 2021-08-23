@@ -1,0 +1,1113 @@
+//overwrites and states && variables
+@import "./responsive.scss";
+
+* { 
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: 'komu';
+  src: url('./Assets/Fonts/komua.ttf');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'estrica';
+  src: url('./Assets/Fonts/estrica.ttf');
+  font-weight: 100;
+}
+
+$headingFont: "komu", sans-serif;
+$textFont: "estrica", sans-serif;
+$mainColor: #FFF5EA;
+$darkColor: #040F20;
+$fancyColor: #F46095;
+$PrimaryFade: #FFECD8; 
+$secondaryFade: #FF8600;
+
+
+
+//mailchimp 
+div.mc-field-group.input-group strong {   
+  font-family: $headingFont;
+  font-size: 1.5rem;
+  font-weight: 100; 
+}  
+div.mc-field-group.input-group input { 
+  margin-right: 0.3rem;
+}
+body { 
+  position: relative;
+  width: 90vw;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3rem 0;
+  background-color: $mainColor;
+}
+
+//header 
+header { 
+  font-family: $headingFont;
+  display: grid;
+  grid-template-columns: 5fr 9fr;
+  align-self: self-end;
+  align-items: baseline;
+    ul { 
+      display: grid;
+      grid-template-columns: 1fr  1fr 2fr;
+      text-align: right;
+        li { 
+          text-align: right;
+          text-decoration: none;
+          list-style: none;
+          cursor: pointer;
+            a { 
+              text-decoration: none;
+              color: $darkColor;
+              font-size: 1.7rem;
+              letter-spacing: 0.04rem;
+            }
+        }
+        #pateron { 
+            a { 
+              width: 80%;
+              background-color: $darkColor;
+              text-align: center;
+              color: $mainColor;
+              text-align: center;
+              display: block;
+              padding: 1rem 1rem 0.6rem 1rem;
+              margin: -1rem auto 0 auto;
+              border-radius: 12px;
+            }
+        }
+    }
+}
+
+//showcase 
+
+#showcase {   
+  display: grid;
+  grid-template-columns: 8fr 5fr;
+  margin-top: 15vh;
+    #tayoIntro { 
+        h1 { 
+          color: $darkColor;
+          font-family: $headingFont;
+          font-size: 15rem;
+          font-weight: 100;
+          line-height: 13rem;
+        }
+        #aboutParagraphs { 
+          margin-bottom: 2rem;
+          font-weight: 300;
+            #paraWithLine { 
+              font-family: $textFont;
+              font-size: 1.2rem;
+              display: grid;
+              align-items: center;
+              gap: 1rem;
+                div {
+                  background-color: $darkColor;
+                  width: 30%;
+                  height: 3px;
+                }
+                p { 
+                  line-height: 22px;
+                }
+            }
+            p { 
+              font-family: $textFont;
+              font-size: 1.2rem;
+              line-height: 25px;
+              margin-top: 2rem;
+              width: 90%;
+            }
+        }
+        #social { 
+            ul { 
+              width: 40%;
+              display: grid;
+              grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
+              align-items: center;
+              gap: 0.3fr;
+                li { 
+                  list-style: none;
+                  font-family: $headingFont;
+                  font-size:  2rem;
+                  font-weight: 100;
+                    a { 
+                      color: $darkColor;
+                      text-decoration: none;
+                    }
+                    &:nth-child(1) a { 
+                      display: block;
+                      background: url('/Assets/twitter.svg') center no-repeat;
+                      background-size: 80%;
+                      width: 40px;
+                      height: 40px;
+                    }
+                    &:nth-child(3) { 
+                      display: block;
+                      background: url('/Assets/instagram.svg') center no-repeat;
+                      background-size: 80%;
+                      width: 40px;
+                      height: 40px;
+                      margin: 0 auto;
+                    }
+                    &:nth-child(5) { 
+                      display: block;
+                      background: url('/Assets/youtube.svg') center no-repeat;
+                      background-size: 90%;
+                      width: 40px;
+                      height: 40px;
+                      margin: 0 auto;
+                    }
+                }
+                div { 
+                  background-color: $darkColor;
+                  width: 50%;
+                  height: 2px;
+                  margin: 0 auto;
+                }
+            }
+        }
+    }
+    #tayoImg { 
+      width: 100%;
+      height: 100%;
+      background: url('/Assets/tayoaina.png');
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-top: -7%;
+    }
+}
+
+
+//course section 
+#courseBox { 
+  background-color: white;
+  margin: 9rem 0;
+  padding: 2rem 2rem;
+  border-radius: 11px;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  align-items: center;
+    #courseText { 
+        #courseTextBadge { 
+          margin-bottom: 0.6rem;
+          width: fit-content;
+          display: grid;
+          grid-template-columns: 1fr 4fr;
+          gap: 0 6px;
+          align-items: center;
+            img { 
+              width: 18px
+            }
+            p { 
+              font-family: $headingFont;
+              padding-top: 4px;
+              font-size: 1.2rem;
+              letter-spacing: 0.2px;
+              color: $fancyColor;
+            }
+        }
+        h1 { 
+          font-family: $headingFont;
+          font-size: 3.4rem;
+          font-weight: 100;
+          color: $darkColor;
+        }
+        p { 
+          font-family: $textFont;
+          font-size: 1.1rem;
+          color: $darkColor;
+        }
+    }
+    button { 
+      width: fit-content;
+      margin: 0 0 0 auto;
+      height: fit-content;
+      padding: 1rem 1.5rem;
+      border: none;
+      border-radius: 11px;
+      background-color: $darkColor;
+      font-family: $headingFont;
+      font-size: 2rem;
+        a { 
+          text-decoration: none;
+          color: white;
+          margin-top: 4px;
+          display: block;
+          letter-spacing: 0.2px;
+        }
+    }
+}
+
+
+//Selling poiints
+#sellingPoints { 
+  border-radius: 22px;
+  margin-top: 4rem;
+  background: $darkColor;
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+    #pointsBox {
+      padding: 5rem 0rem 5rem 8rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin: 0 auto;
+      align-items: end;
+        h1 { 
+          color: white;
+          font-family: $headingFont;
+          font-size: 3rem;
+          font-weight: lighter;
+        }
+        p { 
+          color: white;
+          font-family: $textFont;
+          line-height: 1.5rem;
+          width: 70%;
+          font-size: 1.1rem;
+          margin-bottom: 1rem;
+          margin-top: 5rem;
+        }
+        button { 
+          border-radius: 11px;
+          background-color: $mainColor;
+          border: none;
+          padding: 1rem 1rem;
+          font-family: $headingFont;
+          font-size: 1.4rem;
+          margin-top: 1rem;
+            a { 
+              text-decoration: none;
+              color: $darkColor;
+            }
+        }
+        .points:nth-child(1) { 
+            .pointsIcon { 
+              background: url('/Assets/TayovideoIcon.svg');
+              background-size: 100%;
+              background-repeat: no-repeat;
+              background-position: top;
+            }
+          }
+          .points:nth-child(2) { 
+            .pointsIcon { 
+              background: url('/Assets/tayoTravelsIcon.svg');
+              background-size: 100%;
+              background-repeat: no-repeat;
+              background-position: top;
+            }
+          }
+          .points:nth-child(3) { 
+            .pointsIcon { 
+              background: url('/Assets/tayoBusinessStoriesIcon.svg');
+              background-size: 100%;
+              background-repeat: no-repeat;
+              background-position: top;
+            }
+          }
+    
+        .points { 
+          .pointsIcon { 
+            width: 60px;
+            height: 60px;
+            margin-bottom: 0.6rem;
+          }
+        }
+    }
+    
+}
+
+
+//newsletter 
+#newsLetter { 
+  margin: 3rem 0 0 0;
+  padding: 4rem 3rem;
+  border-radius: 9px;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+    #newsletterText { 
+      color: $darkColor;
+        h1 {
+          font-family: $headingFont;
+          font-size: 5rem;
+          font-weight: 100;
+          margin-bottom: 1rem;
+        }
+        p { 
+          font-family: $textFont;
+          font-size: 1.4rem;
+          line-height: 1.9rem;
+          margin-bottom: 2rem;
+        }
+
+    }
+    form { 
+      width: 90%;
+        input { 
+          display: block;
+          font-family: $textFont;
+          font-size: 1.3rem;
+          background-color: transparent;
+          border: none;
+          border-radius: 0;
+          border-bottom: 2px solid $darkColor;
+          text-transform: uppercase;
+          padding: 0.5rem 0;
+          margin: 1rem 0;
+            &::placeholder { 
+              color: $darkColor
+            }
+            &:focus{ 
+              outline: none
+            }
+        }
+        #submitButton { 
+          height: fit-content;
+          padding: 0.7rem 1.5rem 0.5rem 1.5rem;
+          border: none;
+          border-radius: 11px;
+          background-color: $darkColor;
+          font-family: $headingFont;
+          font-size: 2rem;
+          color: white;
+        }
+    }
+}
+
+//about
+#about { 
+  display: grid;
+  grid-template-columns:  1.5fr 1fr;
+  margin: 0rem 0;
+  height: fit-content;
+    #aboutTayoAinaImage { 
+        #aboutTayoAinaimg { 
+          height: 500px;
+          width: 90%;
+          background-image: url('/Assets/tayoBlue.jpg');
+          background-position: top;
+          background-size: cover;
+          border-radius: 22px;
+          background-repeat: no-repeat;
+          background-color: $darkColor;
+        }
+        #social { 
+          margin: 1.5rem 0;
+          ul { 
+            width: 40%;
+            display: grid;
+            grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
+            align-items: center;
+            gap: 0.3fr;
+              li { 
+                list-style: none;
+                font-family: $headingFont;
+                font-size:  2rem;
+                font-weight: 100;
+                  a { 
+                    color: $darkColor;
+                    text-decoration: none;
+                  }
+              }
+              div { 
+                background-color: $darkColor;
+                width: 50%;
+                height: 2px;
+                margin: 0 auto;
+              }
+          }
+      }
+      button { 
+        width: fit-content;
+        margin: 0 0 0 auto;
+        height: fit-content;
+        padding: 1rem 1.5rem;
+        border: none;
+        border-radius: 11px;
+        background-color: $darkColor;
+        font-family: $headingFont;
+        font-size: 2rem;
+          a { 
+            text-decoration: none;
+            color: white;
+            margin-top: 4px;
+            display: block;
+            letter-spacing: 0.2px;
+            font-weight: lighter;
+          }
+      }
+    }
+
+    #aboutTayoAinaText { 
+      // display: grid;
+        p { 
+          font-size: 1.4rem;
+          font-family: $textFont;
+          color: $darkColor;
+          line-height: 1.4;
+          margin-bottom: 1rem;
+            a { 
+              text-decoration-thickness: 2px;
+              text-decoration-color: rgb(255, 123, 0);
+              color: rgb(255, 123, 0);
+              display: inline-block;
+            }
+        }
+        #aboutEmailBttn { 
+          margin-top: 4rem;
+          p { 
+            font-family: $headingFont;
+            margin: 0;
+          }
+          button { 
+            width: 80%;
+            margin: 0 0 0 auto;
+            height: fit-content;
+            padding: 1rem 0rem;
+            border: none;
+            background-color: $darkColor;
+            font-family: $headingFont;
+            font-size: 3rem;
+              a { 
+                text-decoration: none;
+                color: white;
+                margin-top: 4px;
+                display: block;
+                letter-spacing: 0.2px;
+                font-weight: lighter;
+              }
+          }
+
+        }
+    }
+}
+//footer 
+footer { 
+  display: grid;
+  grid-template-columns: 4fr 7fr;
+  background: $darkColor url('/Assets/tayoSitting.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: fit-content;
+  border-radius: 33px;
+  padding: 3rem 4rem;
+  margin-top: 3rem;
+  padding-top: 24%;
+    #footerTextLogo {
+        h3 { 
+          color: white;
+          font-family: $headingFont;
+          font-size: 2.4rem;
+          font-weight: lighter;
+        }
+        p { 
+          font-family: $textFont;
+          font-size: 1.3rem;
+          color: white;
+        }
+        form { 
+          width: 90%;
+          margin-top: 1rem;
+            input { 
+              display: block;
+              font-family: $textFont;
+              font-size: 1.3rem;
+              background-color: transparent;
+              border: 2px solid $mainColor;
+              border-radius: 0;
+              text-transform: uppercase;
+              padding: 0.5rem 0;
+              margin: 0.4rem 0;
+                &::placeholder { 
+                  color: white
+                }
+                &:focus{ 
+                  outline: none
+                }
+            }
+            #submitButton { 
+              height: fit-content;
+              padding: 0.7rem 1.5rem 0.5rem 1.5rem;
+              border: none;
+              border-radius: 11px;
+              background-color: $mainColor;
+              font-family: $headingFont;
+              font-size: 2rem;
+              color: $darkColor;
+              margin-top: 0.5rem;
+            }
+        }
+   }
+   #footerText { 
+     display: grid;
+     grid-template-columns: 3fr 1fr;
+      #footerSocial { 
+        h3 { 
+          color: white;
+          font-family: $headingFont;
+          font-size: 2rem;
+          font-weight: 100;
+        }
+        ul { 
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+            li { 
+              &:nth-child(1) { 
+                display: block;
+                background: url('/Assets/twitterwhite.svg') left no-repeat;
+                background-size: 60%;
+                width: 40px;
+                height: 40px;
+              }
+              &:nth-child(2) { 
+                display: block;
+                background: url('/Assets/instagramwhite.svg') left no-repeat;
+                background-size: 60%;
+                width: 40px;
+                height: 40px;
+              }
+              &:nth-child(3) { 
+                display: block;
+                background: url('/Assets/youtubewhite.svg') left no-repeat;
+                background-size: 60%;
+                width: 40px;
+                height: 40px;
+              }
+              margin: 1rem 0;
+              list-style: none;
+              text-align: left;
+              font-family: $textFont;
+              font-size: 1.2rem;
+                a { 
+                  text-decoration: none;
+                  color: white;
+                  text-transform: uppercase;
+                }
+            }
+        }
+      }
+      #fotterAbout { 
+        width: 70%;
+        h3 { 
+          color: white;
+          font-family: $headingFont;
+          font-size: 2.4rem;
+          font-weight: 100;
+        } 
+        p { 
+          font-size: 1.4rem;
+          color: white;
+          margin-top: 0.5rem;
+          font-family: $textFont;
+          line-height: 1.5;
+            a { 
+              color: white;
+            }
+        }
+      }
+   }
+}
+
+#registrationPopUp { 
+  margin: 5rem 0;
+  background-color: white;
+  border-radius: 34px;
+    #registrationPopUpBox { 
+      padding: 3rem 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 90%;
+      margin: 0 auto;
+        #registrationPopUpImage { 
+          img { 
+            width: 80%;
+            margin-top: -20%;
+          }
+        }
+        #registrationPopUpText { 
+          h4 { 
+            font-family: $headingFont;
+            font-size: 5.5rem;
+            font-weight: 100;
+          }
+          p { 
+            font-size: 1.2rem;
+            margin-top: 10%;
+            font-family: $textFont;
+            width: 70%;
+            line-height: 1.5;
+          }
+          form { 
+            margin: 2rem 0;
+              input[type='email'] { 
+                width: 50%;
+                display: block;
+                font-family: $textFont;
+                font-size: 1.3rem;
+                background-color: transparent;
+                border: none;
+                border-radius: 0;
+                border-bottom: 2px solid $darkColor;
+                text-transform: uppercase;
+                padding: 0.5rem 0;
+                  &::placeholder { 
+                    color: $darkColor
+                  }
+                  &:focus{ 
+                    outline: none
+                  }
+              }
+              input[type='text'] { 
+                width: 50%;
+                display: block;
+                font-family: $textFont;
+                font-size: 1.3rem;
+                background-color: transparent;
+                border: none;
+                border-radius: 0;
+                border-bottom: 2px solid $darkColor;
+                text-transform: uppercase;
+                padding: 0.5rem 0;
+                  &::placeholder { 
+                    color: $darkColor
+                  }
+                  &:focus{ 
+                    outline: none
+                  }
+              }
+              #submitButton { 
+                height: fit-content;
+                padding: 0.7rem 1.5rem 0.5rem 1.5rem;
+                border: none;
+                border-radius: 11px;
+                background-color: $darkColor;
+                font-family: $headingFont;
+                font-size: 2rem;
+                color: white;
+              }
+          }
+        }
+    }
+}
+
+#closeBttn { 
+  height: fit-content;
+  padding: 0.7rem 1.5rem 0.5rem 1.5rem;
+  border: none;
+  border-radius: 11px;
+  background-color: $darkColor;
+  font-family: $headingFont;
+  font-size: 2rem;
+  color: white;
+  width: fit-content;
+  position: absolute;
+  top: 3%;
+  cursor: pointer;
+  right: 0;
+}
+
+
+/*Reponsitivity starts here*/
+
+
+//for mobile
+@include media(">=phone", "<tablet") { 
+  body { 
+    width: 96vw;
+    padding: 1.3rem 0;
+  }
+  .mobileHeader  { 
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+    align-items: center;
+      h3 { 
+        font-family: $headingFont;
+        font-size: 2rem;
+        margin-top: 6px;
+        font-weight: 100;
+        color: $darkColor;
+        letter-spacing: 0.2rem;
+        cursor: pointer;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+          &:focus { 
+            background-color: red;
+          }
+      }
+      img { 
+        width: 20%;
+      }
+  }
+  #mobileMenuItems { 
+    height: 100vh;
+    padding-top: 35%;
+      ul { 
+          li { 
+            text-align: center;
+            text-decoration: none;
+            list-style: none;
+            margin: 1rem 0;
+            font-family: $textFont;
+            font-size: 1.7rem;
+            text-transform: uppercase;
+              a { 
+                text-decoration: none;
+                color: $darkColor;
+                font-size: 1.7rem;
+                letter-spacing: 0.04rem;
+              }
+          }
+          #pateron { 
+              a { 
+                width: 80%;
+                background-color: $darkColor;
+                text-align: center;
+                color: $mainColor;
+                text-align: center;
+                display: block;
+                padding: 1rem 1rem 0.6rem 1rem;
+                margin: 1rem auto 0 auto;
+                border-radius: 12px;
+              }
+          }
+      }
+  }
+  header { 
+    display: none;
+  }
+  main { 
+      #showcase { 
+        display: block;
+        margin-top: 3rem;
+          #tayoIntro { 
+              h1 { 
+                font-size: 15rem;
+              }
+              #aboutParagraphs { 
+                  #paraWithLine { 
+                    display: block;
+                    margin-bottom: 0.3rem;
+                      div { 
+                        width: 30%;
+                        margin-bottom: 0.5rem;
+                      }
+                  }
+              }
+              #social { 
+                ul { 
+                  width: 100%;
+                  margin-bottom: 2rem;
+                }
+              }
+          }
+          #tayoImg { 
+            width: 100%;
+            height: 500px;
+            // margin-top: 1rem;
+          }
+      }
+      #courseBox { 
+        display: block;
+        margin: 0 0 2rem 0;
+          #courseText { 
+              #courseTextBadge { 
+                p { 
+                  margin: 3px 0 0 0 !important;
+                }
+              }
+              h1 { 
+                margin: 1rem 0;
+                font-size: 3rem;
+              }
+              p { 
+                margin-bottom: 1rem;
+                line-height: 1.4;
+              }
+          }
+      }
+      #sellingPoints { 
+        margin-bottom: 2rem;
+        background: $darkColor;
+          #pointsBox { 
+            display: block;
+            width: 90%;
+            margin: 2rem auto;
+            padding: 3rem 1rem;
+              .points { 
+                margin: 3rem 0;
+                  p { 
+                    width: 100%;
+                    margin-top: 2rem;
+                  }
+              }
+          }
+      }
+      #newsLetter { 
+        margin: 4rem 0 0 0;
+        display: block;
+        padding: 2rem 1.2rem;
+          form { 
+            width: 100%;
+          }
+      }
+      #about { 
+        margin-bottom: 4rem;
+        margin-top: 3rem;
+        display: block;
+          #aboutTayoAinaImage { 
+              #aboutTayoAinaimg { 
+                width: 100%;
+                margin-bottom: 1rem;
+              }
+              #social { 
+                margin-bottom: 1rem;
+                  ul { 
+                    margin: 0;
+                    width: 100%;
+                  }
+              }
+              button { 
+                margin-bottom: 3rem;
+                  a { 
+                    font-weight: 100;
+                  }
+              }
+          }
+          #aboutTayoAinaText { 
+              #aboutEmailBttn { 
+                  button {
+                    width: 100%;
+                    font-size: 2rem;
+                  }
+              }
+          }
+      }
+  }
+  footer { 
+    display: block;
+    padding: 1rem;
+    margin-bottom: 1rem;
+      #footerText { 
+        padding-top: 20%;
+        display: block;
+          .footerInfoBox { 
+            margin-bottom: 3rem;
+          }
+      }
+  }
+
+  #registrationPopUp { 
+    margin-top: 7rem;
+    border-radius: 4px;
+      #registrationPopUpBox { 
+        display: block;
+        padding: 0.4rem 0;
+          #registrationPopUpImage { 
+            img { 
+              width: 100%;
+              margin-top: -15%;
+            }
+          }
+          #registrationPopUpText { 
+            p { 
+              width: 90%;
+            }
+            form { 
+              input[type='email'] {
+                width: 90%;
+              }
+              input[type='text'] { 
+                width: 90%;
+              }
+            }
+          }
+      }
+  }
+
+}
+
+//for tablets
+@include media(">tablet", "<desktop") { 
+  body { 
+    width: 96vw;
+      header { 
+        grid-template-columns: 1fr 9fr;
+        align-items: center;
+          ul { 
+            padding-top: 20px;
+          }
+        }
+
+      #showcase { 
+          #tayoImg { 
+            width: 100%;
+            height: 500px;
+            display: block;
+            margin: 0;
+          }
+          #tayoIntro { 
+            margin-bottom: 2rem;
+              #aboutParagraphs { 
+                  #paraWithLine { 
+                    display: block;
+                      div { 
+                        width: 40%;
+                        margin-bottom: 2rem;
+                      }
+                  }
+              }
+              #social {
+                  ul {
+                    width: 90%;
+                  }
+              }
+          }
+      }
+
+      #courseBox { 
+        padding: 0.6rem 1rem 1.5rem 1rem;
+        margin: 4rem 0;
+        display: block;
+          #courseText { 
+            h1 { 
+              font-size: 2.9rem;
+            }
+            p { 
+              margin: 1rem 0;
+            }
+          }
+      }
+
+      #newsLetter { 
+        margin: 4rem 0 0 0;
+        display: block;
+        padding: 2rem 1.2rem;
+          form { 
+            width: 100%;
+          }
+      }
+
+      #sellingPoints { 
+        margin-bottom: 2rem;
+        background: $darkColor;
+          #pointsBox { 
+            display: block;
+            width: 90%;
+            margin: 2rem auto;
+            padding: 3rem 1rem;
+              .points { 
+                margin: 3rem 0;
+                  p { 
+                    width: 100%;
+                    margin-top: 2rem;
+                  }
+              }
+          }
+      }
+
+      #about { 
+        margin-bottom: 4rem;
+        margin-top: 3rem;
+        display: block;
+          #aboutTayoAinaImage { 
+              #aboutTayoAinaimg { 
+                width: 100%;
+                margin-bottom: 1rem;
+              }
+              #social { 
+                margin-bottom: 1rem;
+                  ul { 
+                    margin: 0;
+                    width: 100%;
+                  }
+              }
+              button { 
+                margin-bottom: 3rem;
+                  a { 
+                    font-weight: 100;
+                  }
+              }
+          }
+      }
+      footer { 
+        padding: 1rem;
+        margin-bottom: 1rem;
+          #footerTextLogo {
+            padding-top: 3rem; 
+              h1 { 
+                color: white;
+                font-family: $headingFont;
+                font-size: 10rem;
+                font-weight: lighter;
+              }
+          }
+
+      }
+
+      #registrationPopUp { 
+        margin-top: 7rem;
+        border-radius: 4px;
+          #registrationPopUpBox { 
+            display: block;
+            padding: 0.4rem 0;
+              #registrationPopUpImage { 
+                img { 
+                  width: 100%;
+                  margin-top: -15%;
+                }
+              }
+              #registrationPopUpText { 
+                p { 
+                  width: 90%;
+                }
+                form { 
+                  input[type='email'] {
+                    width: 90%;
+                  }
+                  input[type='text'] { 
+                    width: 90%;
+                  }
+                }
+              }
+          }
+    }
+
+  }
+  .mobileHeader  { 
+    display: none;
+  }
+  #mobileMenuItems { 
+    display: none;
+  }
+  header { 
+    display: grid;
+  }
+
+}
+
+//for desktops
+@include media(">desktop") { 
+  body { 
+    // background-color: red;
+  }
+  .mobileHeader  { 
+    display: none;
+  }
+  #mobileMenuItems { 
+    display: none;
+  }
+  header { 
+    display: grid;
+  }
+
+}
